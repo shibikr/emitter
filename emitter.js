@@ -17,6 +17,12 @@ emitter.on('flower',function(){
 	console.log('marigold');
 });
 
+var celebrations = function(){
+	console.log('onammmmmmmmm');
+};
+emitter.on('celebrate',celebrations);
+
 emitter.emit('wish');
 emitter.emit('wish');
 emitter.emit('flower');
+emitter.emit('celebrate');
